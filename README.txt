@@ -19,5 +19,3 @@
 *** chatbot-ingest script: .\public_dir\chatbot-ingest
 *** chatbot-calls script: .\public_dir\chatbot-calls
 
-test
-
