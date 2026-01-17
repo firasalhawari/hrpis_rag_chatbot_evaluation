@@ -19,3 +19,19 @@
 *** chatbot-ingest script: .\public_dir\chatbot-ingest
 *** chatbot-calls script: .\public_dir\chatbot-calls
 
+*** How to cite:
+@misc{alhawari2026hrpis,
+  author = {Feras Al-Hawari},
+  title = {HRPIS and RAG Chatbot Evaluation},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}
+}
+
+- For example: 
+Alhawari, F. (2026). HRPIS and RAG chatbot evaluation [Computer software].
+https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
+
+- Paper:
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, and Ahmad Alfalayleh (2026). Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support, Knowledge-Based Systems
+
