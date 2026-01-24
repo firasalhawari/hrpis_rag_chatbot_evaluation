@@ -1,7 +1,7 @@
 1) Summary
 This repository provides the experimental artifacts supporting the study “Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support,” to be published in Knowledge-Based Systems.
 
-The repository contains Scrum-related documentation, entity–relationship (ER) diagrams, and multiple experimental modules focused on large language model (LLM) analysis, including pure LLM, RAG-based, and hybrid chatbot approaches. It also includes scripts for chatbot ingestion and invocation, test datasets consisting of structured evaluation questions, red-teaming scenarios, and result files used for quantitative and qualitative evaluation of chatbot performance.
+The repository contains Scrum-related artifacts, including scripts to generate Scrum metrics such as burn-up charts and defect tracking visualizations. It also includes entity–relationship (ER) diagrams for the main hrpis schemas, as well as multiple experimental modules focused on large language model (LLM) evaluation, including Pure LLM, RAG-based, and hybrid chatbot configurations. Additionally, the repository provides scripts for chatbot ingestion and invocation, test datasets consisting of structured evaluation questions, red-teaming scenarios, and result files used for quantitative and qualitative assessment of chatbot performance.
 
 The bulk of the experimental results reported in the paper can be reproduced by executing the analysis Python scripts provided in the corresponding repository directories. All artifacts are publicly available to support transparency, reproducibility, and independent validation.
 
