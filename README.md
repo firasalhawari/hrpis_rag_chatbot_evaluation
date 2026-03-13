@@ -68,6 +68,8 @@ python test-50-questions-10-2-6/paper_anal_winning_rag_cohen_hybrid_trans_50q.py
 # Reproduce results in section 10.2.7 (see red-teaming-results.csv for results)
 python test-red-teaming-10-2-7/red_teaming.py
 
+---
+
 ## 3) FAISS Index and BM25 Databases
 
 The repository includes prebuilt vector and lexical retrieval databases used in the chatbot experiments. These indexes allow the RAG-based chatbot to perform document retrieval without regenerating embeddings or rebuilding the retrieval indexes.
@@ -78,6 +80,7 @@ The repository includes prebuilt vector and lexical retrieval databases used in 
 
 - BM25 lexical database: `public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25`
 
+---
 
 ## 4) Document Corpus and Chatbot Scripts
 
@@ -101,6 +104,7 @@ The base script used to invoke and evaluate chatbot interactions, including pure
 
 `public_dir/chatbot-calls`
 
+---
 
 ## 5) Reviewer Evaluation Results
 
@@ -111,11 +115,16 @@ The full benchmark consists of 50 evaluation questions. An 18-question subset (Q
 The corresponding result files are:
 
 - `chatbot_eval_review_pure_llms_results.csv` (Pure LLM model results)
+
 - `chatbot_eval_review_rag_llms_results.csv` (RAG-based LLM model results)
+
 - `chatbot_eval_review_hybrid_only_results.csv` (Hybrid retrieval RAG model results)
+
 - `chatbot_eval_review_hybrid_only_with_trans_results.csv` (Hybrid retrieval RAG with query transformation results)
 
-After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions. The complete dataset of questions and answer keys is provided in the file:
+After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions.
+
+The complete dataset of questions and answer keys is provided in the file:
 
 `50_questions_with_ans_keys.xlsx`
 
@@ -125,26 +134,28 @@ The results generated using the full benchmark are available in the directory:
 
 `test-50-questions-10-2-6`
 
+---
 
 ## 6) How to Cite
 
 ### Repository Citation (BibTeX)
 
-@misc{alhawari2026hrpis,  
-author = {Feras Al-Hawari and Anoud Alufeishat and Mohammad Habahbeh and Ahmad Alfalayleh},  
-title = {HRPIS and RAG-Based Chatbot Evaluation Artifacts},  
-year = {2026},  
-publisher = {GitHub},  
-url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}  
+```bibtex
+@misc{alhawari2026hrpis,
+  author = {Feras Al-Hawari and Anoud Alufeishat and Mohammad Habahbeh and Ahmad Alfalayleh},
+  title = {HRPIS and RAG-Based Chatbot Evaluation Artifacts},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}
 }
+Example Citation (APA style)
 
-### Example Citation (APA style)
-
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).  
-HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.  
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
+HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.
 https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
 
-### Corresponding Paper
+Corresponding Paper
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).  
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
 Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
+
