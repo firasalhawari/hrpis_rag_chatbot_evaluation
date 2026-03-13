@@ -1,16 +1,5 @@
 # Reproducibility Artifact
 
-## Table of Contents
-
-1. [Summary](#1-summary)  
-2. [Reproducibility and Execution Instructions](#2-reproducibility-and-execution-instructions)  
-3. [FAISS Index and BM25 Databases](#3-faiss-index-and-bm25-databases)  
-4. [Document Corpus and Chatbot Scripts](#4-document-corpus-and-chatbot-scripts)  
-5. [Reviewer Evaluation Results](#5-reviewer-evaluation-results)  
-6. [How to Cite](#6-how-to-cite)
-
----
-
 ## 1) Summary
 
 This repository provides the experimental artifacts supporting the study “Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support,” to appear in Knowledge-Based Systems. It contains the code, datasets, retrieval databases, evaluation results, and scripts required to reproduce the experiments reported in the paper.
@@ -27,16 +16,17 @@ All headline figures and tables reported in the paper can be reproduced end-to-e
 
 The scripts were executed and tested using the following environment:
 
-- IDE: Spyder 5.5.2  
-- Python: 3.8.10 (64-bit)  
-- GUI Framework: Qt 5.15.2 | PyQt5 5.15.10  
-- Operating System: Windows 10 Enterprise LTSC  
+- IDE: Spyder 5.5.2
+- Python: 3.8.10 (64-bit)
+- GUI Framework: Qt 5.15.2 | PyQt5 5.15.10
+- Operating System: Windows 10 Enterprise LTSC
 - Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM
 
-Some scripts require access to subscription-based Hugging Face large language models. If a script includes the following line:
+Some scripts require access to subscription-based Hugging Face large language models. If a script includes the line:
 
-```python
+
 HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")
+
 
 near the beginning, a valid Hugging Face subscription and API key are required to run that script. These scripts invoke cloud-hosted Hugging Face LLMs via their APIs.
 
@@ -44,6 +34,7 @@ Scripts that do not reference a Hugging Face API key can be executed locally wit
 
 The commands below correspond to the exact steps required to regenerate the reported results:
 
+```bash
 # Reproduce Fig. 33 & Fig. 34
 python hrpis-10-1-1-scrum/scrum_analysis.py
 
@@ -64,14 +55,14 @@ python rag-llm-anal-10-2-3-and-10-2-4/paper_anal_multi_rag_llms.py
 
 # Run the script below to reproduce the following table data
 # Table 14 & 15 (after run, see plots/winning_combination_per_question.csv )
-# Table 16 (after run, see plots/cohen_kappa_per_category_winning_config.csv )
-# Table 17 (after run, see plots/config_ranking.csv)
+# Table 16 (after run,  see plots/cohen_kappa_per_category_winning_config.csv )
+# Table 17 (after run,  see plots/config_ranking.csv)
 python rag-llm-anal-10-2-3-and-10-2-4/paper_anal_multi_rag_llms.py
 
 # Reproduce stats in section 10.2.5 (see script output)
 python rag-vs-pure-gain-stats-10-2-5/rag-hybrid-vs-pure.py
 
-# Reproduce Table 18 (after run, output in plots/cohen_kappa_per_category.csv)
+# Reproduce Table 18 (after run,  output in plots/cohen_kappa_per_category.csv)
 python test-50-questions-10-2-6/paper_anal_winning_rag_cohen_hybrid_trans_50q.py
 
 # Reproduce results in section 10.2.7 (see red-teaming-results.csv for results)
@@ -136,7 +127,9 @@ The results generated using the full benchmark are available in the directory:
 
 test-50-questions-10-2-6
 6) How to Cite
-Repository Citation (BibTeX)
+
+Repository Citation (BibTeX):
+
 @misc{alhawari2026hrpis,
   author = {Feras Al-Hawari and Anoud Alufeishat and Mohammad Habahbeh and Ahmad Alfalayleh},
   title = {HRPIS and RAG-Based Chatbot Evaluation Artifacts},
@@ -144,13 +137,11 @@ Repository Citation (BibTeX)
   publisher = {GitHub},
   url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}
 }
-Example Citation (APA style)
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
-HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.
-https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
+Example Citation (APA style):
 
-Corresponding Paper
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026). HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub. https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
-Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
+Corresponding Paper:
+
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026). Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
