@@ -101,7 +101,7 @@ public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25
 PDF documents containing the German Jordanian University (GJU) payroll regulations and the Jordanian tax law are provided in the directory:
 
 ```
-public_dir\chatbot-ingest\docs
+public_dir\1-chatbot-ingest\docs
 ```
 
 These documents constitute the knowledge source used for document ingestion and retrieval in the RAG-based chatbot experiments.
@@ -111,7 +111,7 @@ These documents constitute the knowledge source used for document ingestion and 
 The document ingestion pipeline used to preprocess and index the PDF corpus and generate the retrieval databases is located in:
 
 ```
-public_dir\chatbot-ingest
+public_dir\1-chatbot-ingest
 ```
 
 ### Chatbot Invocation Script
@@ -119,7 +119,7 @@ public_dir\chatbot-ingest
 The base script used to invoke and evaluate chatbot interactions, including pure LLM, RAG-based, and hybrid configurations, is located in:
 
 ```
-public_dir/chatbot-calls
+public_dir/2-chatbot-calls
 ```
 
 ---
