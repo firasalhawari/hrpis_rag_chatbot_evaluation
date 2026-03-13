@@ -4,8 +4,8 @@
 
 - [1) Summary](#1-summary)
 - [2) Reproducibility and Execution Instructions](#2-reproducibility-and-execution-instructions)
-- [3) FAISS Index and BM25 Databases](#3-faiss-index-and-bm25-databases)
-- [4) Document Corpus and Chatbot Scripts](#4-document-corpus-and-chatbot-scripts)
+- [3) Document Corpus and Chatbot Scripts](#3-document-corpus-and-chatbot-scripts)
+- [4) FAISS Index and BM25 Databases](#4-faiss-index-and-bm25-databases)
 - [5) Reviewer Evaluation Results](#5-reviewer-evaluation-results)
 - [6) How to Cite](#6-how-to-cite)
 
@@ -70,31 +70,7 @@ Some scripts require access to subscription-based Hugging Face large language mo
 
 ---
 
-## 3) FAISS Index and BM25 Databases
-
-The repository includes prebuilt vector and lexical retrieval databases used in the chatbot experiments. These indexes allow the RAG-based chatbot to perform document retrieval without regenerating embeddings or rebuilding the retrieval indexes.
-
-**FAISS database (all-mpnet-base-v2):**
-
-```
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_all-mpnet-base-v2
-```
-
-**FAISS database (sentence-transformers/all-MiniLM-L6-v2):**
-
-```
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_sentence-transformers_all-MiniLM-L6-v2
-```
-
-**BM25 lexical database:**
-
-```
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25
-```
-
----
-
-## 4) Document Corpus and Chatbot Scripts
+## 3) Document Corpus and Chatbot Scripts
 
 ### Document Corpus
 
@@ -120,6 +96,30 @@ The base script used to invoke and evaluate chatbot interactions, including pure
 
 ```
 public_dir/2-chatbot-calls
+```
+
+---
+
+## 4) FAISS Index and BM25 Databases
+
+The repository includes prebuilt vector and lexical retrieval databases used in the chatbot experiments. These indexes allow the RAG-based chatbot to perform document retrieval without regenerating embeddings or rebuilding the retrieval indexes.
+
+**FAISS database (all-mpnet-base-v2):**
+
+```
+public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_all-mpnet-base-v2
+```
+
+**FAISS database (sentence-transformers/all-MiniLM-L6-v2):**
+
+```
+public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_sentence-transformers_all-MiniLM-L6-v2
+```
+
+**BM25 lexical database:**
+
+```
+public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25
 ```
 
 ---
