@@ -1,19 +1,6 @@
 #!/usr/bin/env python3
 """
-chatbot_eval_top_configs_hybrid_only.py
-
-Evaluates top-performing LLM configurations over payroll questions with:
-- Hybrid (FAISS + BM25) retrieval only.
-
-FAISS-only, BM25-only, and pure LLM evaluation are disabled in this version.
-
-Generates CSV and JSON outputs for later reviewer scoring and analysis.
-
-Modifications:
-- citation_present flag
-- retrieval-confidence score
-- timestamp
-- faq_fallback_used placeholder
+@author firas.alhawari
 """
 
 import os
