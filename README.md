@@ -26,16 +26,11 @@ Together, these artifacts enable end-to-end reproduction of the experimental res
 All headline figures and tables reported in the paper can be reproduced end-to-end using the scripts provided in this repository. The commands below specify the exact steps required to regenerate the reported results.
 
 The scripts were executed and tested using the following environment:
-
-IDE: Spyder 5.5.2  
-
-Python: 3.8.10 (64-bit)  
-
-GUI Framework: Qt 5.15.2 | PyQt5 5.15.10  
-
-Operating System: Windows 10 Enterprise LTSC  
-
-Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM  
+- IDE: Spyder 5.5.2  
+- Python: 3.8.10 (64-bit)  
+- GUI Framework: Qt 5.15.2 | PyQt5 5.15.10  
+- Operating System: Windows 10 Enterprise LTSC  
+- Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM  
 
 Some scripts require access to subscription-based Hugging Face large language models. If a script includes the line:
 
@@ -153,15 +148,11 @@ The corresponding result files are:
 - chatbot_eval_review_hybrid_only_results.csv (Hybrid retrieval RAG model results)  
 - chatbot_eval_review_hybrid_only_with_trans_results.csv (Hybrid retrieval RAG with query transformation results)
 
-After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions.
-
-The complete dataset of questions and answer keys is provided in the file:
+After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions. The complete dataset of questions and answer keys is provided in the file (in this file, the initial evaluation subset corresponds to questions Q1–Q18):
 
 ```
 50_questions_with_ans_keys.xlsx
 ```
-
-(in this file, the initial evaluation subset corresponds to questions Q1–Q18).
 
 The results generated using the full benchmark are available in the directory:
 
