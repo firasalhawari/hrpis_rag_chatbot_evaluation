@@ -32,15 +32,7 @@ The scripts were executed and tested using the following environment:
 - Operating System: Windows 10 Enterprise LTSC  
 - Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM  
 
-Some scripts require access to subscription-based Hugging Face large language models. If a script includes the line:
-
-```
-HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")
-```
-
-near the beginning, a valid Hugging Face subscription and API key are required to run that script. These scripts invoke cloud-hosted Hugging Face LLMs via their APIs.
-
-Scripts that do not reference a Hugging Face API key can be executed locally without any subscription.
+Some scripts require access to subscription-based Hugging Face large language models. If a script includes the line `HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")` near the beginning, a valid Hugging Face subscription and API key are required to run that script. These scripts invoke cloud-hosted Hugging Face LLMs via their APIs. Scripts that do not reference a Hugging Face API key can be executed locally without any subscription.
 
 The commands below correspond to the exact steps required to regenerate the reported results:
 
@@ -148,13 +140,13 @@ The corresponding result files are:
 - chatbot_eval_review_hybrid_only_results.csv (Hybrid retrieval RAG model results)  
 - chatbot_eval_review_hybrid_only_with_trans_results.csv (Hybrid retrieval RAG with query transformation results)
 
-After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions. The complete dataset of questions and answer keys is provided in the file (in this file, the initial evaluation subset corresponds to questions Q1–Q18):
+After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions. The complete dataset of questions and answer keys is provided in the following file (in this file, the initial evaluation subset corresponds to questions Q1–Q18):
 
 ```
 50_questions_with_ans_keys.xlsx
 ```
 
-The results generated using the full benchmark are available in the directory:
+The results generated using the full benchmark are available in the following directory:
 
 ```
 test-50-questions-10-2-6
