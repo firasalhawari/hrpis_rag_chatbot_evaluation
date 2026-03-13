@@ -164,7 +164,6 @@ test-50-questions-10-2-6
   url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}
 }
 ```
-
 ### Example Citation (APA style)
 
 Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026). HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub. https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
