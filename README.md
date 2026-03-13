@@ -67,41 +67,42 @@ python test-50-questions-10-2-6/paper_anal_winning_rag_cohen_hybrid_trans_50q.py
 
 # Reproduce results in section 10.2.7 (see red-teaming-results.csv for results)
 python test-red-teaming-10-2-7/red_teaming.py
-3) FAISS Index and BM25 Databases
+
+## 3) FAISS Index and BM25 Databases
 
 The repository includes prebuilt vector and lexical retrieval databases used in the chatbot experiments. These indexes allow the RAG-based chatbot to perform document retrieval without regenerating embeddings or rebuilding the retrieval indexes.
 
-FAISS database (all-mpnet-base-v2):
+- FAISS database (all-mpnet-base-v2): `public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_all-mpnet-base-v2`
 
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_all-mpnet-base-v2
+- FAISS database (sentence-transformers/all-MiniLM-L6-v2): `public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_sentence-transformers_all-MiniLM-L6-v2`
 
-FAISS database (sentence-transformers/all-MiniLM-L6-v2):
+- BM25 lexical database: `public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25`
 
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_faiss_750_sentence-transformers_all-MiniLM-L6-v2
 
-BM25 lexical database:
+## 4) Document Corpus and Chatbot Scripts
 
-public_dir\2-chatbot-calls\vectordb_multi\vectordb_bm25
-4) Document Corpus and Chatbot Scripts
-Document Corpus
+### Document Corpus
 
 PDF documents containing the German Jordanian University (GJU) payroll regulations and the Jordanian tax law are provided in the directory:
 
-public_dir\chatbot-ingest\docs
+`public_dir\chatbot-ingest\docs`
 
 These documents constitute the knowledge source used for document ingestion and retrieval in the RAG-based chatbot experiments.
 
-Chatbot Ingestion Script
+### Chatbot Ingestion Script
 
 The document ingestion pipeline used to preprocess and index the PDF corpus and generate the retrieval databases is located in:
 
-public_dir\chatbot-ingest
-Chatbot Invocation Script
+`public_dir\chatbot-ingest`
+
+### Chatbot Invocation Script
 
 The base script used to invoke and evaluate chatbot interactions, including pure LLM, RAG-based, and hybrid configurations, is located in:
 
-public_dir/chatbot-calls
-5) Reviewer Evaluation Results
+`public_dir/chatbot-calls`
+
+
+## 5) Reviewer Evaluation Results
 
 The repository includes reviewer evaluation results for chatbot responses across multiple configurations and models.
 
@@ -109,42 +110,41 @@ The full benchmark consists of 50 evaluation questions. An 18-question subset (Q
 
 The corresponding result files are:
 
-chatbot_eval_review_pure_llms_results.csv (Pure LLM model results)
-
-chatbot_eval_review_rag_llms_results.csv (RAG-based LLM model results)
-
-chatbot_eval_review_hybrid_only_results.csv (Hybrid retrieval RAG model results)
-
-chatbot_eval_review_hybrid_only_with_trans_results.csv (Hybrid retrieval RAG with query transformation results)
+- `chatbot_eval_review_pure_llms_results.csv` (Pure LLM model results)
+- `chatbot_eval_review_rag_llms_results.csv` (RAG-based LLM model results)
+- `chatbot_eval_review_hybrid_only_results.csv` (Hybrid retrieval RAG model results)
+- `chatbot_eval_review_hybrid_only_with_trans_results.csv` (Hybrid retrieval RAG with query transformation results)
 
 After identifying the best-performing configuration, the evaluation was verified using the full set of 50 questions. The complete dataset of questions and answer keys is provided in the file:
 
-50_questions_with_ans_keys.xlsx
+`50_questions_with_ans_keys.xlsx`
 
 (in this file, the initial evaluation subset corresponds to questions Q1–Q18).
 
 The results generated using the full benchmark are available in the directory:
 
-test-50-questions-10-2-6
-6) How to Cite
+`test-50-questions-10-2-6`
 
-Repository Citation (BibTeX):
 
-@misc{alhawari2026hrpis,
-  author = {Feras Al-Hawari and Anoud Alufeishat and Mohammad Habahbeh and Ahmad Alfalayleh},
-  title = {HRPIS and RAG-Based Chatbot Evaluation Artifacts},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}
+## 6) How to Cite
+
+### Repository Citation (BibTeX)
+
+@misc{alhawari2026hrpis,  
+author = {Feras Al-Hawari and Anoud Alufeishat and Mohammad Habahbeh and Ahmad Alfalayleh},  
+title = {HRPIS and RAG-Based Chatbot Evaluation Artifacts},  
+year = {2026},  
+publisher = {GitHub},  
+url = {https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation}  
 }
 
-Example Citation (APA style):
+### Example Citation (APA style)
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
-HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).  
+HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.  
 https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
 
-Corresponding Paper:
+### Corresponding Paper
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).  
 Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
