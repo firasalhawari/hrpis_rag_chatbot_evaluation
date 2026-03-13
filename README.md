@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-- [1) Summary](#1-summary)
-- [2) Reproducibility and Execution Instructions](#2-reproducibility-and-execution-instructions)
-- [3) Document Corpus and Chatbot Scripts](#3-document-corpus-and-chatbot-scripts)
-- [4) FAISS Index and BM25 Databases](#4-faiss-index-and-bm25-databases)
-- [5) Reviewer Evaluation Results](#5-reviewer-evaluation-results)
-- [6) How to Cite](#6-how-to-cite)
+[1) Summary](#1-summary)
+[2) Reproducibility and Execution Instructions](#2-reproducibility-and-execution-instructions)
+[3) Document Corpus and Chatbot Scripts](#3-document-corpus-and-chatbot-scripts)
+[4) FAISS Index and BM25 Databases](#4-faiss-index-and-bm25-databases)
+[5) Reviewer Evaluation Results](#5-reviewer-evaluation-results)
+[6) How to Cite](#6-how-to-cite)
 
 ---
 
