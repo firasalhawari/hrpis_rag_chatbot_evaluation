@@ -1,5 +1,15 @@
 # Reproducibility Artifact
 
+## Artifact Version
+
+The reproducibility artifact corresponding to the experiments reported in this paper
+is archived as the versioned GitHub tag `v1.0-artifact`, which points to commit
+`035b70263c2dd9ca911e4776a2c88335d4f3d986`.
+
+This tag freezes the exact repository state containing the scripts, datasets,
+retrieval databases, and instructions required to reproduce all headline figures
+and tables reported in the paper.
+
 ## Table of Contents
 
 - [1) Summary](#1-summary)
