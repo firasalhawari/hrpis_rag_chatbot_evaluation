@@ -79,6 +79,7 @@ python test-50-questions-10-2-6/paper_anal_winning_rag_cohen_hybrid_trans_50q.py
 
 # Reproduce results in section 10.2.7 (see red-teaming-results.csv for results)
 python test-red-teaming-10-2-7/red_teaming.py
+
 3. FAISS Index and BM25 Databases
 
 The repository includes prebuilt vector and lexical retrieval databases used in the chatbot experiments. These indexes allow the RAG-based chatbot to perform document retrieval without regenerating embeddings or rebuilding the retrieval indexes.
