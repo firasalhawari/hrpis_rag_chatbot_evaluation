@@ -16,11 +16,11 @@ All headline figures and tables reported in the paper can be reproduced end-to-e
 
 The scripts were executed and tested using the following environment:
 
-- IDE: Spyder 5.5.2
-- Python: 3.8.10 (64-bit)
-- GUI Framework: Qt 5.15.2 | PyQt5 5.15.10
-- Operating System: Windows 10 Enterprise LTSC
-- Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM
+- IDE: Spyder 5.5.2  
+- Python: 3.8.10 (64-bit)  
+- GUI Framework: Qt 5.15.2 | PyQt5 5.15.10  
+- Operating System: Windows 10 Enterprise LTSC  
+- Hardware: Processor: 12th Gen Intel® Core™ i7-12700H @ 2.30 GHz; Memory: 32 GB RAM  
 
 Some scripts require access to subscription-based Hugging Face large language models. If a script includes the line:
 
@@ -32,7 +32,7 @@ near the beginning, a valid Hugging Face subscription and API key are required t
 
 Scripts that do not reference a Hugging Face API key can be executed locally without any subscription.
 
-The commands below correspond to the exact steps required to regenerate the reported results:
+The commands below correspond to the exact steps required to regenerate the reported results.
 
 ```bash
 # Reproduce Fig. 33 & Fig. 34
@@ -55,14 +55,14 @@ python rag-llm-anal-10-2-3-and-10-2-4/paper_anal_multi_rag_llms.py
 
 # Run the script below to reproduce the following table data
 # Table 14 & 15 (after run, see plots/winning_combination_per_question.csv )
-# Table 16 (after run,  see plots/cohen_kappa_per_category_winning_config.csv )
-# Table 17 (after run,  see plots/config_ranking.csv)
+# Table 16 (after run, see plots/cohen_kappa_per_category_winning_config.csv )
+# Table 17 (after run, see plots/config_ranking.csv)
 python rag-llm-anal-10-2-3-and-10-2-4/paper_anal_multi_rag_llms.py
 
 # Reproduce stats in section 10.2.5 (see script output)
 python rag-vs-pure-gain-stats-10-2-5/rag-hybrid-vs-pure.py
 
-# Reproduce Table 18 (after run,  output in plots/cohen_kappa_per_category.csv)
+# Reproduce Table 18 (after run, output in plots/cohen_kappa_per_category.csv)
 python test-50-questions-10-2-6/paper_anal_winning_rag_cohen_hybrid_trans_50q.py
 
 # Reproduce results in section 10.2.7 (see red-teaming-results.csv for results)
@@ -140,8 +140,11 @@ Repository Citation (BibTeX):
 
 Example Citation (APA style):
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026). HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub. https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
+HRPIS and RAG-Based Chatbot Evaluation Artifacts [Computer software]. GitHub.
+https://github.com/firasalhawari/hrpis_rag_chatbot_evaluation
 
 Corresponding Paper:
 
-Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026). Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
+Feras Al-Hawari, Anoud Alufeishat, Mohammad Habahbeh, & Ahmad Alfalayleh. (2026).
+Scrum-Guided Development of an Intelligent Payroll Management System with Rule-Based Automation and RAG Chatbot Support. Knowledge-Based Systems.
